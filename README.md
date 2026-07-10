@@ -1,84 +1,496 @@
-# CricLive — Real-Time Cricket Intelligence Platform
+# 🏏 CricLive AI
 
-Complete full-stack SaaS cricket analytics app: React/Vite/Tailwind frontend +
-Express/MongoDB/Socket.io backend, matching the login/register/dashboard
-reference designs (dark navy, cyan glassmorphism).
+> **AI-Powered Real-Time Cricket Live Score, Analytics & SaaS Platform**
+
+CricLive AI is a modern full-stack SaaS platform that combines **real-time live cricket scores, AI-powered insights, advanced analytics, fantasy recommendations, personalized dashboards, and cricket news** into one seamless experience.
+
+Unlike traditional scoreboards, CricLive AI provides intelligent match analysis, AI-driven predictions, player statistics, subscription-based premium features, and an immersive glassmorphism-inspired user interface.
+
+---
+
+# 🚀 Project Overview
+
+Cricket enthusiasts often need to switch between multiple applications to access:
+
+- Live Scores
+- Match Statistics
+- Player Records
+- Team Analysis
+- Fantasy Suggestions
+- Cricket News
+- AI Insights
+
+**CricLive AI** solves this problem by integrating everything into a single intelligent SaaS platform powered by real-time APIs and Artificial Intelligence.
+
+---
+
+# ✨ Key Features
+
+## 🏏 Live Cricket Dashboard
+
+- Real-time Live Scores
+- Ball-by-ball Commentary
+- Live Match Statistics
+- Upcoming Fixtures
+- Completed Matches
+- Match Summary
+- Toss Information
+- Venue Details
+- Match Timeline
+- Scorecards
+- Playing XI
+- Partnership Statistics
+- Current Run Rate
+- Required Run Rate
+- Match Momentum
+- Win Probability
+- Match Notifications
+- Beautiful "No Live Matches" Interactive Screen
+
+---
+
+## 📊 Cricket Analytics
+
+- Team Performance Dashboard
+- Player Statistics
+- Tournament Standings
+- Batting Analysis
+- Bowling Analysis
+- Head-to-Head Comparison
+- Partnership Analysis
+- Performance Graphs
+- Historical Match Records
+- Venue Statistics
+
+---
+
+## 🤖 AI Cricket Assistant
+
+Powered by **Google Gemini**
+
+Features:
+
+- AI Cricket Chatbot
+- Match Analysis
+- Match Prediction
+- AI Match Summary
+- Fantasy Team Suggestions
+- AI Player Comparison
+- Explain Cricket Rules
+- AI Generated Match Insights
+- Commentary Summarization
+
+---
+
+## 👤 User Authentication
+
+- User Registration
+- Secure Login
+- JWT Authentication
+- Password Encryption
+- Forgot Password
+- Reset Password
+- Profile Management
+
+---
+
+## ❤️ Personalized Experience
+
+- Favorite Teams
+- Favorite Players
+- Favorite Matches
+- Personalized Dashboard
+- Notification Preferences
+- Saved AI Conversations
+
+---
+
+## 📰 Cricket News
+
+Real-time News
+
+- IPL News
+- ICC Updates
+- International Cricket
+- Domestic Cricket
+- Match Reports
+- Trending Cricket Stories
+
+---
+
+## 💎 SaaS Features
+
+### Free Plan
+
+- Live Scores
+- Match Schedule
+- Basic Statistics
+- Limited AI Questions
+
+### Pro Plan
+
+- Unlimited AI
+- Fantasy Suggestions
+- Advanced Analytics
+- News Personalization
+
+### Premium Plan
+
+- Everything in Pro
+- Premium AI Analysis
+- Early Features
+- Advanced Predictions
+- Exclusive Insights
+
+---
+
+## 💳 Subscription System
+
+- Razorpay Integration
+- Subscription Plans
+- Payment Verification
+- Upgrade/Downgrade Plan
+- Billing History
+
+---
+
+## 🔔 Smart Notifications
+
+- Match Start Alerts
+- Toss Notifications
+- Wicket Alerts
+- Innings Break
+- Match Finished
+- Favorite Team Alerts
+- Subscription Notifications
+
+---
+
+## 🎨 Modern UI/UX
+
+- Glassmorphism Design
+- Dark Theme
+- Gradient Backgrounds
+- Smooth Animations
+- Interactive Cards
+- Premium Dashboard
+- Responsive Layout
+- Mobile Friendly
+- Tablet Optimized
+- Modern Typography
+- Cricket Inspired Theme
+
+---
+
+# 🛠 Tech Stack
+
+## Frontend
+
+- React.js
+- Vite
+- Tailwind CSS
+- React Router DOM
+- Axios
+- Framer Motion
+- React Icons
+- Recharts
+- Chart.js
+- Swiper.js
+
+---
+
+## Backend
+
+- Node.js
+- Express.js
+- MongoDB Atlas
+- Mongoose
+- JWT Authentication
+- bcrypt.js
+- Express Validator
+- Socket.io
+- Axios
+- dotenv
+- CORS
+
+---
+
+# 🌐 APIs Used
+
+## 🏏 SportsMonks Cricket API
+
+Provides
+
+- Live Matches
+- Live Scores
+- Fixtures
+- Teams
+- Players
+- Venues
+- Scorecards
+- Standings
+- Seasons
+- Match Statistics
+- Ball-by-Ball Data
+
+---
+
+## 📰 GNews API
+
+Provides
+
+- Cricket News
+- Match Reports
+- Latest Articles
+- Breaking News
+- Trending Cricket Stories
+
+---
+
+## 🤖 Google Gemini API
+
+Provides
+
+- AI Chatbot
+- Match Analysis
+- Cricket Q&A
+- Fantasy Suggestions
+- Match Predictions
+- AI Generated Summaries
+
+---
+
+## 🍃 MongoDB Atlas
+
+Stores
+
+- User Accounts
+- Authentication Data
+- Favorites
+- Notifications
+- AI Chat History
+- Subscription Details
+- User Preferences
+
+---
+
+## 💳 Razorpay
+
+Provides
+
+- Secure Payments
+- Subscription Billing
+- Premium Plan Management
+
+---
+
+# 🏗 System Architecture
 
 ```
-CricLive/
-├── client/   React + Vite + Tailwind v4 frontend
-└── server/   Express + MongoDB + JWT + Socket.io backend
+                    SportsMonks API
+                           │
+                           ▼
+                  Express.js Backend
+                 (Node.js + Socket.io)
+                           │
+        ┌──────────────────┼───────────────────┐
+        ▼                  ▼                   ▼
+  MongoDB Atlas       Gemini AI API      GNews API
+        │                  │                   │
+        └──────────────────┼───────────────────┘
+                           ▼
+             React + Tailwind CSS Frontend
+                           │
+                           ▼
+                    CricLive AI Users
 ```
 
-## Quick start
+---
 
-**1. Backend**
+# 📂 Folder Structure
+
+```
+CricLive-AI/
+│
+├── client/
+│   ├── public/
+│   ├── src/
+│   │
+│   ├── assets/
+│   ├── components/
+│   ├── context/
+│   ├── hooks/
+│   ├── layouts/
+│   ├── pages/
+│   ├── routes/
+│   ├── services/
+│   ├── utils/
+│   ├── App.jsx
+│   └── main.jsx
+│
+├── server/
+│   ├── config/
+│   ├── controllers/
+│   ├── middleware/
+│   ├── models/
+│   ├── routes/
+│   ├── services/
+│   ├── websocket/
+│   ├── utils/
+│   └── server.js
+│
+├── README.md
+└── package.json
+```
+
+---
+
+# ⚙️ Installation
+
+## Clone Repository
+
 ```bash
-cd server
-cp .env.example .env    # works as-is with zero keys — see table below
-npm install
-npm run dev              # http://localhost:5000
+git clone https://github.com/KratikaSharma32/CricLive-AI.git
 ```
 
-**2. Frontend** (new terminal)
+---
+
+## Install Dependencies
+
+### Frontend
+
 ```bash
 cd client
-cp .env.example .env
 npm install
-npm run dev               # http://localhost:5173
 ```
 
-Open http://localhost:5173 — register, land on the dashboard, click through
-everything below.
+### Backend
 
-## Pages / features included
+```bash
+cd server
+npm install
+```
 
-- **Landing** — hero, live match preview, pricing
-- **Register / Login / Forgot password / Reset password** — full JWT flow, real emails via nodemailer (logs the link to the console if SMTP isn't configured)
-- **Dashboard** — live / upcoming / recent matches, pulled from the backend
-- **No Live Matches** — countdown, trending news, AI cricket fact (never shows an empty state)
-- **Match Details** — scorecard, bowling figures, partnerships, and a working **AI Match Analyst** chat box
-- **Team Details / Player Details** — stats, squad, favorite-heart button wired to the backend
-- **Analytics** — run-rate chart, win probability, top players, and a working **AI Match Predictor**
-- **Fantasy Assistant** — full squad view + working **AI captain/vice-captain/safe/risky picks**
-- **Favorites** — saved matches/teams/players, backed by the real `/api/favorites` endpoints
-- **Subscription** — Free/Pro/Premium, real Razorpay checkout + signature verification
-- **News** — GNews-backed, falls back to bundled headlines with no key
+---
 
-## What runs with zero API keys vs. with keys
+# 🔐 Environment Variables
 
-| Feature | Zero keys | With keys |
-|---|---|---|
-| Auth | In-memory user store | Set `MONGO_URI` → persists to MongoDB Atlas |
-| Matches / Teams / Players | Bundled fallback data | Set `SPORTMONKS_API_TOKEN` (+ `CRICAPI_KEY` backup) → real fixtures |
-| News | Bundled fallback articles | Set `GNEWS_API_KEY` → real headlines |
-| AI (analyst, fantasy, predictor, commentary) | Rule-based analysis from real match numbers | Set `OPENAI_API_KEY` or `GEMINI_API_KEY` → LLM-generated |
-| Caching | In-memory | Set `REDIS_URL` → real Redis, spec TTLs |
-| Payments | Clear "not configured" message | Set `RAZORPAY_KEY_ID` + `RAZORPAY_KEY_SECRET` → real checkout |
-| Password reset email | Logged to server console | Set `SMTP_HOST/USER/PASS` → real email via nodemailer |
-| Push notifications | Logged to server console, saved to DB if connected | Set Firebase creds → real FCM push |
-| Live score push | Simulated 15s tick over Socket.io | Swap the `setInterval` in `server/websocket/socket.js` for a real poll/webhook |
+Create a `.env` file inside the **server** folder.
 
-Every feature is fully implemented end to end — nothing is a dead button.
-The fallbacks exist so the whole app is clickable today; add real provider
-keys whenever you have them, one at a time, with no code changes needed
-anywhere else.
+```env
+PORT=5000
 
-## Architecture notes
+MONGO_URI=YOUR_MONGODB_ATLAS_URI
 
-- **Auth**: JWT access (15 min) + refresh (30 day), httpOnly cookies, bcrypt,
-  express-validator, rate-limited auth routes.
-- **Plans**: Free / Pro (₹299) / Premium (₹799) enforced server-side via
-  `requirePlan(["Pro","Premium"])` on the AI routes.
-- **Cricket data**: SportMonks primary → CricAPI backup → bundled dataset,
-  so live/upcoming/completed/team/player endpoints are never empty.
-- **AI**: OpenAI → Gemini → rule-based analyzer built from real match
-  numbers (run rate, required rate, partnerships) — always returns a real
-  answer, never a placeholder.
-- **Real-time**: Socket.io (`live:matches`, `score:update`, `join:match`)
-  simulating live ticks now; event names are stable for a real feed later.
-- **Payments**: Razorpay order + signature verification wired end to end.
-- **Email**: nodemailer for password reset, graceful console-log fallback.
-- **Notifications**: Firebase Admin SDK wrapper with the 7 trigger types
-  from the spec (match start, 50, 100, hat-trick chance, wicket, result,
-  favorite team update), persisted to Mongo when connected.
+SPORTMONKS_API_TOKEN=YOUR_SPORTMONKS_API_TOKEN
+
+GNEWS_API_KEY=YOUR_GNEWS_API_KEY
+
+GEMINI_API_KEY=YOUR_GEMINI_API_KEY
+
+JWT_SECRET=YOUR_SECRET_KEY
+
+RAZORPAY_KEY_ID=YOUR_RAZORPAY_KEY_ID
+
+RAZORPAY_KEY_SECRET=YOUR_RAZORPAY_SECRET
+```
+
+---
+
+# ▶️ Run Project
+
+### Backend
+
+```bash
+npm run server
+```
+
+### Frontend
+
+```bash
+npm run dev
+```
+
+---
+
+# 📈 Future Enhancements
+
+- AI Voice Cricket Assistant
+- Fantasy League Builder
+- IPL Auction Analytics
+- Multi-language Support
+- Push Notifications
+- Progressive Web App (PWA)
+- Admin Dashboard
+- Team Comparison Engine
+- AI Player Performance Prediction
+- Match Highlight Generator
+- Live Streaming Integration
+- Mobile Application (React Native)
+- Social Login (Google/GitHub)
+- AI Match Highlights
+
+---
+
+# 📸 Screenshots
+
+Add screenshots of:
+
+- Landing Page
+- Live Match Dashboard
+- Match Details
+- AI Assistant
+- Analytics Dashboard
+- Team Profile
+- Player Profile
+- Cricket News
+- Subscription Page
+- Login Page
+- Register Page
+- Mobile Responsive UI
+
+---
+
+# 👨‍💻 Developer
+
+**Kratika Sharma**
+
+B.Tech Computer Science Engineering
+
+### GitHub
+
+https://github.com/KratikaSharma32
+
+### LinkedIn
+
+(Add your LinkedIn Profile)
+
+---
+
+# 🌟 Why CricLive AI?
+
+✅ Real-Time Cricket Scores
+
+✅ AI-Powered Cricket Insights
+
+✅ Fantasy Team Recommendations
+
+✅ Live Cricket Analytics
+
+✅ Secure Authentication
+
+✅ Subscription-Based SaaS Platform
+
+✅ Modern Glassmorphism UI
+
+✅ Mobile Responsive Design
+
+✅ Built with MERN Stack
+
+✅ Integrated with Real-World APIs
+
+---
+
+# ⭐ Support
+
+If you found this project useful, please consider giving it a **⭐ Star** on GitHub. It helps support the project and motivates future improvements.
